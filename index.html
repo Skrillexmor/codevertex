@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeVertex | Dharam Bhojani - Freelance Full-Stack Web Developer</title>
+  <meta name="description" content="Official freelance portfolio of Dharam Bhojani (CodeVertex). Specializing in modern web applications, luxury e-commerce, SaaS CRM systems, and high-performance digital solutions.">
+  <meta name="keywords" content="Freelance Web Developer, Dharam Bhojani, CodeVertex, Next.js Developer, React Developer, Full Stack Freelancer, E-Commerce Developer, SaaS CRM Developer">
+  <meta name="author" content="Dharam Bhojani - CodeVertex">
+  <meta property="og:title" content="CodeVertex | Dharam Bhojani - Freelance Developer Portfolio">
+  <meta property="og:description" content="Explore live production websites, SaaS CRM systems, and e-commerce platforms engineered by Dharam Bhojani (CodeVertex).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Animated Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="CodeVertex Home">
+        <img src="assets/images/logo.jpg" alt="CodeVertex Logo" class="brand-logo-img">
+        <div class="brand-text">
+          CODE<span>VERTEX</span>
+          <span class="brand-tagline">CODE • CREATE • CONNECT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">Live Projects (6)</a></li>
+        <li><a href="#about" class="nav-link">About &amp; Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#calculator" class="nav-link">Cost Estimator</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA & Mobile Trigger -->
+      <div class="nav-cta-wrap">
+        <a href="#calculator" class="btn btn-secondary btn-sm">
+          <i class="fa-solid fa-calculator"></i> Estimate Cost
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-paper-plane"></i> Let's Talk
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span>Available for Freelance &amp; Contract Work</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Dharam Bhojani</span><br>
+            <span class="text-gradient-vibrant" id="typing-text">Full-Stack Web Developer</span>
+            <span class="typing-cursor">|</span>
+          </h1>
+
+          <p class="hero-desc">
+            Founder of <strong>CodeVertex</strong>. I engineer lightning-fast websites, luxury e-commerce stores, B2B manufacturer portals, and enterprise SaaS CRM systems designed to convert visitors into clients.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group"></i> Explore 6 Live Websites
+            </a>
+            <a href="#calculator" class="btn btn-secondary">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Instant Cost Estimator
+            </a>
+            <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-glow">
+              <i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp
+            </a>
+          </div>
+
+          <!-- Hero Tech Stack Pills -->
+          <div class="hero-tech-stack">
+            <span class="tech-tag-label">Tech Stack:</span>
+            <span class="tech-pill"><i class="fa-brands fa-react" style="color: #00d8ff;"></i> React / Next.js</span>
+            <span class="tech-pill"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+            <span class="tech-pill"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML5 / CSS3</span>
+            <span class="tech-pill"><i class="fa-brands fa-node-js" style="color: #68a063;"></i> Node.js</span>
+            <span class="tech-pill"><i class="fa-solid fa-database" style="color: #00ed64;"></i> APIs &amp; CRM</span>
+            <span class="tech-pill"><i class="fa-solid fa-cart-shopping" style="color: #ff9900;"></i> E-Commerce</span>
+          </div>
+        </div>
+
+        <!-- Hero Right Column / Visual 3D Profile Card -->
+        <div class="hero-visual-card">
+          <div class="hero-profile-box tilt-card">
+            <!-- Floating Top Badge -->
+            <div class="float-badge float-badge-1">
+              <i class="fa-solid fa-circle-check" style="color: #00f0ff;"></i>
+              <span>6+ Active Live Sites</span>
+            </div>
+
+            <div class="hero-avatar-wrap">
+              <img src="assets/images/logo.jpg" alt="CodeVertex Logo" class="hero-avatar-img">
+            </div>
+
+            <h2 class="hero-card-name">Dharam Bhojani</h2>
+            <div class="hero-card-title">&lt;CodeVertex /&gt; Studio</div>
+            
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+              "Turning ideas into clean, fast, and high-converting digital realities."
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 0.75rem;">
+              <a href="https://wa.me/919999999999" target="_blank" class="btn btn-secondary btn-sm" style="flex: 1;">
+                <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> WhatsApp
+              </a>
+              <a href="#contact" class="btn btn-primary btn-sm" style="flex: 1;">
+                <i class="fa-solid fa-bolt"></i> Hire Me
+              </a>
+            </div>
+
+            <!-- Floating Bottom Badge -->
+            <div class="float-badge float-badge-2">
+              <i class="fa-solid fa-star" style="color: #fbbf24;"></i>
+              <span>100% 5-Star Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Performance & Results Strip -->
+      <div class="stats-strip">
+        <div class="stat-item">
+          <span class="stat-number text-gradient">6+</span>
+          <span class="stat-label">Live Production Sites</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number text-gradient-vibrant">99%</span>
+          <span class="stat-label">Speed &amp; SEO Optimization</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number text-gradient-gold">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number text-gradient">24/7</span>
+          <span class="stat-label">Priority Maintenance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Featured Projects Showcase (The 6 Websites with Real Screenshots)
+       ========================================================================== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">
+          <i class="fa-solid fa-layer-group"></i> Real Live Work
+        </div>
+        <h2 class="section-title">
+          Explore My <span class="text-gradient">6 Featured Websites</span>
+        </h2>
+        <p class="section-subtitle">
+          Real production websites built for clients across growth marketing, luxury fragrances, B2B manufacturing, fine jewelry, and financial SaaS CRM systems.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Work (6)</button>
+        <button class="filter-btn" data-filter="growth">Growth &amp; Marketing</button>
+        <button class="filter-btn" data-filter="ecommerce">Luxury E-Commerce</button>
+        <button class="filter-btn" data-filter="manufacturing">B2B Manufacturing</button>
+        <button class="filter-btn" data-filter="jewelry">Fine Jewelry</button>
+        <button class="filter-btn" data-filter="saas">SaaS &amp; CRM</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: DigiDaily -->
+        <div class="project-card tilt-card" data-category="growth">
+          <div class="browser-top-bar">
+            <div class="browser-dots">
+              <span class="browser-dot red"></span>
+              <span class="browser-dot yellow"></span>
+              <span class="browser-dot green"></span>
+            </div>
+            <div class="browser-url-badge">
+              <i class="fa-solid fa-lock" style="font-size: 0.65rem; color: #10b981;"></i>
+              <span>digidaily.in</span>
+            </div>
+            <div class="live-badge-mini">
+              <span class="pulse-dot"></span> Live
+            </div>
+          </div>
+          <div class="project-thumb-wrap">
+            <img src="assets/images/digidaily.png" alt="DigiDaily Website Screenshot" class="project-thumb-img">
+            <div class="project-thumb-overlay">
+              <a href="https://digidaily.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="digidaily">
+                <i class="fa-solid fa-eye"></i> Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h3 class="project-title">DigiDaily</h3>
+              <span class="project-cat-pill">Growth Marketing</span>
+            </div>
+            <p class="project-desc">
+              High-converting business growth system &amp; performance marketing agency portal featuring live metrics visualization, ROAS analytics, and automated growth audit booking.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5 / CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Metrics Dashboard</span>
+              <span class="project-tag">Audit Funnel</span>
+              <span class="project-tag">SEO 98+</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://digidaily.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Live Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="digidaily">
+                <i class="fa-solid fa-circle-info"></i> Quick View
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: King Perfumes -->
+        <div class="project-card tilt-card" data-category="ecommerce">
+          <div class="browser-top-bar">
+            <div class="browser-dots">
+              <span class="browser-dot red"></span>
+              <span class="browser-dot yellow"></span>
+              <span class="browser-dot green"></span>
+            </div>
+            <div class="browser-url-badge">
+              <i class="fa-solid fa-lock" style="font-size: 0.65rem; color: #10b981;"></i>
+              <span>king-perfumes.vercel.app</span>
+            </div>
+            <div class="live-badge-mini">
+              <span class="pulse-dot"></span> Live
+            </div>
+          </div>
+          <div class="project-thumb-wrap">
+            <img src="assets/images/king-perfumes.png" alt="King Perfumes Website Screenshot" class="project-thumb-img">
+            <div class="project-thumb-overlay">
+              <a href="https://king-perfumes.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="perfumes">
+                <i class="fa-solid fa-eye"></i> Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h3 class="project-title">King Perfumes</h3>
+              <span class="project-cat-pill" style="color: var(--accent-gold); border-color: rgba(245, 158, 11, 0.3);">Luxury E-Commerce</span>
+            </div>
+            <p class="project-desc">
+              Minimalist botanical luxury fragrance web store ("Nourish Your Senses, Naturally"). Built on Next.js/Vercel with interactive product visualizers and instant cart checkout.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React / Next.js</span>
+              <span class="project-tag">Vercel Edge</span>
+              <span class="project-tag">Luxury UI</span>
+              <span class="project-tag">Web Cart</span>
+              <span class="project-tag">Micro-Animations</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://king-perfumes.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Live Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="perfumes">
+                <i class="fa-solid fa-circle-info"></i> Quick View
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Breezerland -->
+        <div class="project-card tilt-card" data-category="manufacturing">
+          <div class="browser-top-bar">
+            <div class="browser-dots">
+              <span class="browser-dot red"></span>
+              <span class="browser-dot yellow"></span>
+              <span class="browser-dot green"></span>
+            </div>
+            <div class="browser-url-badge">
+              <i class="fa-solid fa-lock" style="font-size: 0.65rem; color: #10b981;"></i>
+              <span>breezerland.in</span>
+            </div>
+            <div class="live-badge-mini">
+              <span class="pulse-dot"></span> Live
+            </div>
+          </div>
+          <div class="project-thumb-wrap">
+            <img src="assets/images/breezerland.png" alt="Breezerland Website Screenshot" class="project-thumb-img">
+            <div class="project-thumb-overlay">
+              <a href="https://breezerland.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="breezerland">
+                <i class="fa-solid fa-eye"></i> Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h3 class="project-title">Breezerland</h3>
+              <span class="project-cat-pill" style="color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.3);">B2B Manufacturing</span>
+            </div>
+            <p class="project-desc">
+              Official corporate web platform for Breezerland Perfumes (Rajkot, Gujarat - Est. 2020), highlighting industrial laboratory infrastructure, global export, and instant WhatsApp inquiry.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">B2B Portal</span>
+              <span class="project-tag">Export Showcase</span>
+              <span class="project-tag">WhatsApp API</span>
+              <span class="project-tag">Responsive UI</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://breezerland.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Live Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="breezerland">
+                <i class="fa-solid fa-circle-info"></i> Quick View
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Madhav Jewels -->
+        <div class="project-card tilt-card" data-category="jewelry">
+          <div class="browser-top-bar">
+            <div class="browser-dots">
+              <span class="browser-dot red"></span>
+              <span class="browser-dot yellow"></span>
+              <span class="browser-dot green"></span>
+            </div>
+            <div class="browser-url-badge">
+              <i class="fa-solid fa-lock" style="font-size: 0.65rem; color: #10b981;"></i>
+              <span>madhavjewels.co.in</span>
+            </div>
+            <div class="live-badge-mini">
+              <span class="pulse-dot"></span> Live
+            </div>
+          </div>
+          <div class="project-thumb-wrap">
+            <img src="assets/images/madhav-jewels.png" alt="Madhav Jewels Screenshot" class="project-thumb-img">
+            <div class="project-thumb-overlay">
+              <a href="https://madhavjewels.co.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="jewels">
+                <i class="fa-solid fa-eye"></i> Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h3 class="project-title">Madhav Jewels</h3>
+              <span class="project-cat-pill" style="color: var(--accent-gold); border-color: rgba(245, 158, 11, 0.3);">Fine Jewelry</span>
+            </div>
+            <p class="project-desc">
+              Regal antique gold &amp; diamond jewelry digital showroom and gallery. Includes multi-tier collection filters (Rings, Necklaces, Bracelets, Bangles) with high-definition zoom.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Luxury Gallery</span>
+              <span class="project-tag">Gold &amp; Diamond</span>
+              <span class="project-tag">Multi-Filter</span>
+              <span class="project-tag">Bespoke Inquiry</span>
+              <span class="project-tag">SEO Ready</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://madhavjewels.co.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Live Site
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="jewels">
+                <i class="fa-solid fa-circle-info"></i> Quick View
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: FinDoc CRM (CRM v4 Growth) -->
+        <div class="project-card tilt-card" data-category="saas">
+          <div class="browser-top-bar">
+            <div class="browser-dots">
+              <span class="browser-dot red"></span>
+              <span class="browser-dot yellow"></span>
+              <span class="browser-dot green"></span>
+            </div>
+            <div class="browser-url-badge">
+              <i class="fa-solid fa-lock" style="font-size: 0.65rem; color: #10b981;"></i>
+              <span>crmv4growth.in/login</span>
+            </div>
+            <div class="live-badge-mini">
+              <span class="pulse-dot"></span> Live
+            </div>
+          </div>
+          <div class="project-thumb-wrap">
+            <img src="assets/images/findoc-crm.png" alt="FinDoc CRM Screenshot" class="project-thumb-img">
+            <div class="project-thumb-overlay">
+              <a href="https://crmv4growth.in/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit App
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="crm">
+                <i class="fa-solid fa-eye"></i> Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h3 class="project-title">FinDoc CRM</h3>
+              <span class="project-cat-pill" style="color: var(--accent-purple); border-color: rgba(168, 85, 247, 0.3);">Enterprise SaaS</span>
+            </div>
+            <p class="project-desc">
+              Comprehensive SaaS CRM platform for Financial &amp; Document Services (Loans, Tax Services, Passport, Insurance, RTO, Credit Cards) with secure auth and pipeline tracking.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Full-Stack SaaS</span>
+              <span class="project-tag">Financial Pipelines</span>
+              <span class="project-tag">Secure Auth</span>
+              <span class="project-tag">Client Portal</span>
+              <span class="project-tag">Database Ops</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://crmv4growth.in/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Live App
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="crm">
+                <i class="fa-solid fa-circle-info"></i> Quick View
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: CodeVertex Custom Labs -->
+        <div class="project-card tilt-card" data-category="saas">
+          <div class="browser-top-bar">
+            <div class="browser-dots">
+              <span class="browser-dot red"></span>
+              <span class="browser-dot yellow"></span>
+              <span class="browser-dot green"></span>
+            </div>
+            <div class="browser-url-badge">
+              <i class="fa-solid fa-lock" style="font-size: 0.65rem; color: #10b981;"></i>
+              <span>codevertex.dev</span>
+            </div>
+            <div class="live-badge-mini">
+              <span class="pulse-dot"></span> Flagship
+            </div>
+          </div>
+          <div class="project-thumb-wrap">
+            <img src="assets/images/project-codevertex.svg" alt="CodeVertex Innovations Mockup" class="project-thumb-img">
+            <div class="project-thumb-overlay">
+              <a href="#contact" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-rocket"></i> Get Started
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="codevertex">
+                <i class="fa-solid fa-eye"></i> Details
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h3 class="project-title">CodeVertex Labs</h3>
+              <span class="project-cat-pill">Next-Gen Web</span>
+            </div>
+            <p class="project-desc">
+              Custom full-stack web architectures, client digital products, and high-performance web animations engineered by Dharam Bhojani under the CodeVertex banner.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Full-Stack Web</span>
+              <span class="project-tag">HTML5 Canvas</span>
+              <span class="project-tag">Cyber UI</span>
+              <span class="project-tag">Speed Tuning</span>
+              <span class="project-tag">Custom APIs</span>
+            </div>
+            <div class="project-actions">
+              <a href="#contact" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-rocket"></i> Build Your App
+              </a>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="codevertex">
+                <i class="fa-solid fa-circle-info"></i> Quick View
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About & Core Skills Matrix
+       ========================================================================== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="badge-tag">
+            <i class="fa-solid fa-user-astronaut"></i> About Dharam &amp; CodeVertex
+          </div>
+          <h2 class="section-title">
+            Passionate Developer Building <span class="text-gradient">High-Impact Websites</span>
+          </h2>
+          <p>
+            I am Dharam Bhojani, an independent full-stack web developer and founder of <strong>CodeVertex</strong>. With hands-on experience building diverse web architectures—from growth marketing systems and luxury perfume stores to B2B manufacturing hubs, jewelry galleries, and financial SaaS CRM systems—I provide complete end-to-end digital solutions.
+          </p>
+          <div class="highlight-box">
+            <p>
+              "Code. Create. Connect. — My commitment is simple: clean code, breathtaking modern design, fast delivery, and seamless communication."
+            </p>
+          </div>
+          <p>
+            Whether you need a brand-new website, an e-commerce store, a custom CRM dashboard, or a website speed overhaul, I ensure your project is delivered on time with 100% precision.
+          </p>
+          <div style="margin-top: 2rem;">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-handshake"></i> Start a Project With Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Skills Matrix -->
+        <div class="skills-container">
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="background: rgba(0, 240, 255, 0.15); color: var(--accent-cyan);">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="skill-cat-title">Frontend &amp; UI Architecture</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">HTML5 / Semantic Web</span>
+              <span class="skill-tag">CSS3 / Glassmorphism</span>
+              <span class="skill-tag">JavaScript ES6+</span>
+              <span class="skill-tag">React.js / Next.js</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Canvas Animations</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h3 class="skill-cat-title">Backend, APIs &amp; SaaS Systems</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">CRM System Architectures</span>
+              <span class="skill-tag">Authentication &amp; Sessions</span>
+              <span class="skill-tag">SQL / Databases</span>
+              <span class="skill-tag">Lead Management Pipelines</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-gold);">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <h3 class="skill-cat-title">E-Commerce, B2B &amp; Performance</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <span class="skill-tag">Luxury Storefronts</span>
+              <span class="skill-tag">Shopping Cart Systems</span>
+              <span class="skill-tag">WhatsApp Orders</span>
+              <span class="skill-tag">Product Filter Catalogs</span>
+              <span class="skill-tag">Lighthouse 95+ Speed</span>
+              <span class="skill-tag">SEO Meta Schema</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Services & Solutions
+       ========================================================================== -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">
+          <i class="fa-solid fa-cubes"></i> Freelance Offerings
+        </div>
+        <h2 class="section-title">
+          End-to-End <span class="text-gradient">Web Solutions</span> I Provide
+        </h2>
+        <p class="section-subtitle">
+          From concept wireframing to production deployment, I handle every phase of web development with precision and care.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card">
+          <div class="service-icon-box" style="background: rgba(0, 240, 255, 0.1); color: var(--accent-cyan);">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title">Custom Full-Stack Web Development</h3>
+          <p class="service-desc">
+            Tailor-made websites and web apps built from scratch to match your brand identity with zero bloat and maximum speed.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Pixel-perfect responsive design across all devices</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Clean, modular code structure for easy expansion</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Cross-browser compatibility &amp; smooth scrolling</li>
+          </ul>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);">
+            <i class="fa-solid fa-cart-flatbed"></i>
+          </div>
+          <h3 class="service-title">Luxury E-Commerce &amp; Product Stores</h3>
+          <p class="service-desc">
+            High-converting digital storefronts, shopping carts, product filter matrices, and payment/WhatsApp order integrations.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Fast cart management &amp; frictionless checkout</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Interactive product image zoom &amp; scent/spec cards</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Direct WhatsApp order placement functionality</li>
+          </ul>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box" style="background: rgba(168, 85, 247, 0.1); color: var(--accent-purple);">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h3 class="service-title">SaaS Dashboards &amp; CRM Systems</h3>
+          <p class="service-desc">
+            Custom business portals, lead management funnels, KPI analytics charts, authentication, and secure client databases.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Role-based access control &amp; session security</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Interactive analytics charts &amp; exportable reports</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Automated lead follow-up &amp; contact tracking</li>
+          </ul>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald);">
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+          <h3 class="service-title">Performance Tuning &amp; SEO Boost</h3>
+          <p class="service-desc">
+            Audit and optimize websites to achieve 95+ Google Lighthouse scores, fast Core Web Vitals, and top search engine rankings.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Sub-second page load times &amp; asset compression</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Structured JSON-LD schema &amp; OpenGraph tags</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> CDN setup, browser caching &amp; DNS optimization</li>
+          </ul>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box" style="background: rgba(236, 72, 153, 0.1); color: var(--accent-pink);">
+            <i class="fa-solid fa-wand-magic"></i>
+          </div>
+          <h3 class="service-title">Website Redesign &amp; Modernization</h3>
+          <p class="service-desc">
+            Transform outdated websites into visually stunning, dynamic web portals with modern cyber glassmorphism and animations.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Contemporary typography &amp; curated color palettes</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Smooth micro-interactions &amp; scroll reveals</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Complete overhaul of mobile responsiveness</li>
+          </ul>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box" style="background: rgba(0, 102, 255, 0.1); color: var(--accent-blue);">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="service-title">Ongoing Maintenance &amp; 24/7 Support</h3>
+          <p class="service-desc">
+            Reliable support to keep your web infrastructure secure, updated, backed up, and running with zero downtime.
+          </p>
+          <ul class="service-features">
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Regular security patches &amp; version updates</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Automated database backups &amp; uptime monitoring</li>
+            <li class="service-feature-item"><i class="fa-solid fa-check"></i> Rapid troubleshooting &amp; feature additions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Working Process Section
+       ========================================================================== -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">
+          <i class="fa-solid fa-route"></i> Seamless Workflow
+        </div>
+        <h2 class="section-title">
+          How We Work <span class="text-gradient">Together</span>
+        </h2>
+        <p class="section-subtitle">
+          A clear, transparent 4-step process to bring your dream website from concept to live deployment.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="step-num">01</div>
+          <h3 class="process-title">Discovery &amp; Scope</h3>
+          <p class="process-desc">
+            We discuss your business requirements, target audience, brand aesthetic, and key features to define the project blueprint.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">02</div>
+          <h3 class="process-title">Design &amp; Prototype</h3>
+          <p class="process-desc">
+            I craft modern UI mockups, visual layouts, and interactive components for your review and approval.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">03</div>
+          <h3 class="process-title">Development &amp; APIs</h3>
+          <p class="process-desc">
+            I write clean, fast, and secure code, integrating all required databases, forms, payment gateways, and animations.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">04</div>
+          <h3 class="process-title">Testing &amp; Launch</h3>
+          <p class="process-desc">
+            Rigorous cross-device testing, SEO optimization, speed verification, followed by deployment to your live domain.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive Project Cost Estimator & Quote Generator
+       ========================================================================== -->
+  <section id="calculator" class="calculator-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">
+          <i class="fa-solid fa-calculator"></i> Transparent Pricing
+        </div>
+        <h2 class="section-title">
+          Interactive <span class="text-gradient">Project Cost Estimator</span>
+        </h2>
+        <p class="section-subtitle">
+          Select your project preferences below to calculate an instant cost and timeline estimate, then send it directly to WhatsApp with 1 click!
+        </p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="calc-grid">
+          <!-- Options Controls -->
+          <div class="calc-options">
+            
+            <!-- 1. Project Type -->
+            <div>
+              <div class="calc-group-title">
+                <i class="fa-solid fa-shapes text-cyan"></i> 1. Select Project Type
+              </div>
+              <div class="calc-chips">
+                <div class="calc-chip calc-type-chip active" data-name="Business / Portfolio Website" data-base="14999" data-days="5">
+                  <span class="chip-name">Portfolio / Business</span>
+                  <span class="chip-sub">From ₹14,999</span>
+                </div>
+                <div class="calc-chip calc-type-chip" data-name="Luxury E-Commerce Store" data-base="24999" data-days="8">
+                  <span class="chip-name">E-Commerce Store</span>
+                  <span class="chip-sub">From ₹24,999</span>
+                </div>
+                <div class="calc-chip calc-type-chip" data-name="SaaS / CRM Dashboard" data-base="34999" data-days="12">
+                  <span class="chip-name">SaaS / CRM System</span>
+                  <span class="chip-sub">From ₹34,999</span>
+                </div>
+                <div class="calc-chip calc-type-chip" data-name="B2B Manufacturing Portal" data-base="19999" data-days="7">
+                  <span class="chip-name">B2B Manufacturing</span>
+                  <span class="chip-sub">From ₹19,999</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Page Count -->
+            <div>
+              <div class="calc-group-title">
+                <i class="fa-solid fa-file-lines text-cyan"></i> 2. Number of Custom Pages
+              </div>
+              <div class="calc-chips">
+                <div class="calc-chip calc-page-chip active" data-name="1 - 5 Pages" data-mult="1.0" data-add-days="0">
+                  <span class="chip-name">1 - 5 Pages</span>
+                  <span class="chip-sub">Standard</span>
+                </div>
+                <div class="calc-chip calc-page-chip" data-name="6 - 12 Pages" data-mult="1.35" data-add-days="4">
+                  <span class="chip-name">6 - 12 Pages</span>
+                  <span class="chip-sub">+35% scope</span>
+                </div>
+                <div class="calc-chip calc-page-chip" data-name="13+ Enterprise Pages" data-mult="1.75" data-add-days="8">
+                  <span class="chip-name">13+ Pages</span>
+                  <span class="chip-sub">Enterprise</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Add-on Features -->
+            <div>
+              <div class="calc-group-title">
+                <i class="fa-solid fa-puzzle-piece text-cyan"></i> 3. Desired Features &amp; Add-ons
+              </div>
+              <div class="calc-features-grid">
+                <label class="calc-check-item">
+                  <input type="checkbox" class="calc-feature-check" data-name="User Authentication &amp; Roles" data-cost="5000">
+                  <span>User Login / Auth</span>
+                </label>
+                <label class="calc-check-item">
+                  <input type="checkbox" class="calc-feature-check" data-name="Payment Gateway Integration" data-cost="4500">
+                  <span>Payment Gateway</span>
+                </label>
+                <label class="calc-check-item">
+                  <input type="checkbox" class="calc-feature-check" data-name="WhatsApp Instant Chat &amp; Orders" data-cost="2000" checked>
+                  <span>WhatsApp Integration</span>
+                </label>
+                <label class="calc-check-item">
+                  <input type="checkbox" class="calc-feature-check" data-name="Advanced SEO Schema &amp; Speed Boost" data-cost="3500" checked>
+                  <span>Advanced SEO &amp; Speed</span>
+                </label>
+                <label class="calc-check-item">
+                  <input type="checkbox" class="calc-feature-check" data-name="Custom Admin CMS Dashboard" data-cost="8000">
+                  <span>Admin CMS Panel</span>
+                </label>
+                <label class="calc-check-item">
+                  <input type="checkbox" class="calc-feature-check" data-name="3D Canvas &amp; Micro-Animations" data-cost="4000">
+                  <span>3D / Rich Animations</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 4. Delivery Speed -->
+            <div>
+              <div class="calc-group-title">
+                <i class="fa-solid fa-gauge-simple-high text-cyan"></i> 4. Delivery Urgency
+              </div>
+              <div class="calc-chips">
+                <div class="calc-chip calc-urgency-chip active" data-name="Standard Delivery" data-mult="1.0">
+                  <span class="chip-name">Standard</span>
+                  <span class="chip-sub">Normal Pace</span>
+                </div>
+                <div class="calc-chip calc-urgency-chip" data-name="Priority Rush Delivery" data-mult="1.25">
+                  <span class="chip-name">Priority Rush</span>
+                  <span class="chip-sub">Fast Track ⚡</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Summary & Quote Output Card -->
+          <div class="calc-summary-card">
+            <div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Estimated Investment</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Custom estimate tailored to your exact scope</p>
+
+              <div class="calc-price-wrap">
+                <div class="calc-price-label">Estimated Price Range</div>
+                <div class="calc-price-val" id="calc-price-val">₹20,499 - ₹24,599</div>
+                <span class="calc-timeline-val" id="calc-timeline-val">⏱️ Estimated Delivery: 5 - 9 Working Days</span>
+              </div>
+
+              <ul class="calc-breakdown-list">
+                <li><span>Project Type:</span> <strong id="breakdown-type" style="color: #fff;">Business / Portfolio</strong></li>
+                <li><span>Scope:</span> <strong id="breakdown-pages" style="color: #fff;">1 - 5 Pages</strong></li>
+                <li><span>Add-ons:</span> <strong id="breakdown-features" style="color: #fff;">2 Selected</strong></li>
+                <li><span>Delivery:</span> <strong id="breakdown-speed" style="color: #fff;">Standard</strong></li>
+              </ul>
+            </div>
+
+            <div>
+              <a href="https://wa.me/919999999999" id="whatsapp-quote-btn" target="_blank" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Send Scope on WhatsApp
+              </a>
+              <a href="#contact" class="btn btn-secondary" style="width: 100%;">
+                <i class="fa-solid fa-envelope"></i> Request Official Quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Client Testimonials
+       ========================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">
+          <i class="fa-solid fa-heart"></i> Client Satisfaction
+        </div>
+        <h2 class="section-title">
+          What Clients Say About <span class="text-gradient">CodeVertex</span>
+        </h2>
+        <p class="section-subtitle">
+          Real feedback from founders and businesses who trust my web engineering services.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card">
+          <div class="test-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="test-quote">
+            "Dharam engineered our luxury perfume storefront with outstanding aesthetics and silky-smooth animations. The checkout flow helped boost our sales significantly. Outstanding work!"
+          </p>
+          <div class="test-author">
+            <div class="test-avatar">KP</div>
+            <div>
+              <div class="test-name">Founder &amp; Director</div>
+              <div class="test-role">King Perfumes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <div class="test-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="test-quote">
+            "Our FinDoc CRM platform requires fast session security and multi-category document tracking. Dharam delivered an intuitive, highly dependable portal that our operational team relies on daily."
+          </p>
+          <div class="test-author">
+            <div class="test-avatar" style="background: var(--grad-vibrant);">FC</div>
+            <div>
+              <div class="test-name">Operations Head</div>
+              <div class="test-role">FinDoc CRM (crmv4growth.in)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <div class="test-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="test-quote">
+            "The Breezerland portal represents our perfume manufacturing excellence and export credentials perfectly. The direct WhatsApp and call integration brings in high-value B2B inquiries consistently."
+          </p>
+          <div class="test-author">
+            <div class="test-avatar" style="background: var(--grad-emerald);">BL</div>
+            <div>
+              <div class="test-name">Managing Director</div>
+              <div class="test-role">Breezerland Perfumes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact & Hire Me Section
+       ========================================================================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">
+          <i class="fa-solid fa-paper-plane"></i> Direct Connect
+        </div>
+        <h2 class="section-title">
+          Let's Build Something <span class="text-gradient">Extraordinary</span>
+        </h2>
+        <p class="section-subtitle">
+          Have an idea for a website, e-commerce store, or custom SaaS CRM platform? Send me a message and I'll respond within 24 hours.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Hub -->
+        <div class="contact-info-wrap">
+          
+          <a href="https://wa.me/919999999999" target="_blank" class="contact-card-item">
+            <div class="contact-icon-box" style="background: rgba(37, 211, 102, 0.2); color: #25d366;">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <div class="contact-label">Direct WhatsApp Chat</div>
+              <div class="contact-val">Chat with Dharam Instantly</div>
+            </div>
+          </a>
+
+          <div class="contact-card-item" id="copy-email-btn" style="cursor: pointer;">
+            <div class="contact-icon-box" style="background: rgba(0, 240, 255, 0.2); color: var(--accent-cyan);">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact-label">Email Address (Click to Copy)</div>
+              <div class="contact-val">codevertex.dev@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon-box" style="background: rgba(168, 85, 247, 0.2); color: var(--accent-purple);">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="contact-label">Location &amp; Availability</div>
+              <div class="contact-val">India • Remote Worldwide Delivery</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1rem;">
+            <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: #cbd5e1;">Connect On Social Profiles</h4>
+            <div class="social-links-row">
+              <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/919999999999" target="_blank" class="social-btn" aria-label="WhatsApp Direct"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Project Inquiry</h3>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Your Email *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="name@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-service" class="form-label">Service Required</label>
+              <select id="form-service" class="form-select">
+                <option value="Full-Stack Web Development">Full-Stack Web Development</option>
+                <option value="Luxury E-Commerce Storefront">Luxury E-Commerce Store</option>
+                <option value="SaaS Dashboard & CRM">SaaS / CRM Dashboard</option>
+                <option value="B2B Manufacturing & Corporate">B2B Manufacturing Portal</option>
+                <option value="Website Redesign & Speed Optimization">Website Redesign &amp; Speed Boost</option>
+                <option value="Custom Consultation">General Inquiry / Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Project Details &amp; Scope *</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Describe your project, desired features, timeline, or reference links..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Inquiry Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Project Quick-View Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <img src="assets/images/digidaily.png" alt="Project Preview" id="modal-img" class="modal-hero-img">
+
+      <div class="modal-body">
+        <div class="badge-tag" id="modal-category">Project Category</div>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+        
+        <p id="modal-overview" style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+          Project overview description goes here.
+        </p>
+
+        <h4 style="font-size: 1.1rem; margin-bottom: 0.85rem; color: #ffffff;">Key Features &amp; Capabilities:</h4>
+        <ul id="modal-features" class="service-features" style="margin-bottom: 1.5rem;">
+          <!-- Dynamically populated -->
+        </ul>
+
+        <h4 style="font-size: 1.1rem; margin-bottom: 0.85rem; color: #ffffff;">Technologies &amp; Tools Used:</h4>
+        <div class="project-tags" id="modal-tech" style="margin-bottom: 2rem;">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#" id="modal-link" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Live Website
+          </a>
+          <a href="#contact" class="btn btn-secondary" onclick="document.getElementById('modal-close').click();">
+            <i class="fa-solid fa-handshake"></i> Build Similar Website
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/919999999999" target="_blank" class="floating-whatsapp" aria-label="Quick WhatsApp Chat">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <img src="assets/images/logo.jpg" alt="CodeVertex Logo" class="brand-logo-img">
+            <div class="brand-text">
+              CODE<span>VERTEX</span>
+              <span class="brand-tagline">CODE • CREATE • CONNECT</span>
+            </div>
+          </a>
+          <p>
+            Freelance full-stack web developer crafting scalable, high-converting digital products and modern web architectures.
+          </p>
+          <div class="social-links-row">
+            <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/919999999999" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">6 Live Projects</a></li>
+            <li><a href="#about">About &amp; Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#calculator">Cost Estimator</a></li>
+            <li><a href="#contact">Contact Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Featured Projects Links -->
+        <div>
+          <h4 class="footer-col-title">Live Portfolios</h4>
+          <ul class="footer-links">
+            <li><a href="https://digidaily.in/" target="_blank">DigiDaily Growth ↗</a></li>
+            <li><a href="https://king-perfumes.vercel.app/" target="_blank">King Perfumes ↗</a></li>
+            <li><a href="https://breezerland.in/" target="_blank">Breezerland Perfumes ↗</a></li>
+            <li><a href="https://madhavjewels.co.in/" target="_blank">Madhav Jewels ↗</a></li>
+            <li><a href="https://crmv4growth.in/login" target="_blank">FinDoc CRM ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div>
+          <h4 class="footer-col-title">Get In Touch</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:codevertex.dev@gmail.com"><i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> codevertex.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/919999999999" target="_blank"><i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem; color: #25d366;"></i> WhatsApp Support</a></li>
+            <li><span style="color: var(--text-muted); font-size: 0.9rem;"><i class="fa-solid fa-location-dot" style="margin-right: 0.5rem; color: var(--accent-purple);"></i> India (Worldwide Remote)</span></li>
+            <li><span style="color: var(--text-muted); font-size: 0.9rem;"><i class="fa-solid fa-clock" style="margin-right: 0.5rem; color: var(--accent-emerald);"></i> 24/7 Response Time</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>CodeVertex</strong>. Engineered by <strong>Dharam Bhojani</strong>. All Rights Reserved.
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan);">
+          &lt;Code. Create. Connect. /&gt;
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

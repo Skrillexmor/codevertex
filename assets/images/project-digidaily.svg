@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg-dd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+    <linearGradient id="accent-dd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff416c" />
+      <stop offset="100%" stop-color="#ff4b2b" />
+    </linearGradient>
+    <linearGradient id="card-dd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="glow-dd" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-dd)" rx="16" />
+
+  <!-- Ambient Glow -->
+  <circle cx="650" cy="120" r="180" fill="#ff416c" opacity="0.18" filter="url(#glow-dd)" />
+  <circle cx="150" cy="400" r="150" fill="#6366f1" opacity="0.15" filter="url(#glow-dd)" />
+
+  <!-- Browser Chrome Mockup -->
+  <g transform="translate(40, 40)">
+    <!-- Browser Window Box -->
+    <rect width="720" height="420" rx="12" fill="#0b0f19" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Top Bar -->
+    <rect width="720" height="42" rx="12" fill="#151d2f" />
+    <rect y="30" width="720" height="12" fill="#151d2f" />
+    <!-- Traffic lights -->
+    <circle cx="25" cy="21" r="5.5" fill="#ef4444" />
+    <circle cx="45" cy="21" r="5.5" fill="#f59e0b" />
+    <circle cx="65" cy="21" r="5.5" fill="#10b981" />
+    <!-- Address Bar -->
+    <rect x="180" y="10" width="360" height="22" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="360" y="25" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">🔒 https://digidaily.in</text>
+
+    <!-- Content Area -->
+    <!-- Brand Header -->
+    <rect x="25" y="60" width="130" height="24" rx="4" fill="url(#accent-dd)" />
+    <text x="90" y="76" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">DIGIDAILY.IN</text>
+    
+    <rect x="180" y="66" width="60" height="12" rx="3" fill="#334155" />
+    <rect x="255" y="66" width="60" height="12" rx="3" fill="#334155" />
+    <rect x="330" y="66" width="60" height="12" rx="3" fill="#334155" />
+    <rect x="610" y="60" width="85" height="24" rx="12" fill="#3b82f6" />
+    <text x="652" y="76" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#fff" text-anchor="middle">LIVE NEWS</text>
+
+    <!-- Breaking News Banner -->
+    <rect x="25" y="100" width="670" height="32" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1" />
+    <rect x="35" y="106" width="80" height="20" rx="4" fill="#ef4444" />
+    <text x="75" y="120" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">TRENDING</text>
+    <text x="130" y="121" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1">Digital Transformation &amp; Tech Breakthroughs Across Global Markets</text>
+
+    <!-- Main Grid -->
+    <!-- Hero Article Card -->
+    <rect x="25" y="145" width="410" height="255" rx="8" fill="url(#card-dd)" stroke="#334155" stroke-width="1" />
+    <rect x="40" y="160" width="380" height="130" rx="6" fill="#1e293b" />
+    <!-- Gradient Overlay inside image area -->
+    <rect x="40" y="160" width="380" height="130" rx="6" fill="url(#accent-dd)" opacity="0.3" />
+    <circle cx="230" cy="225" r="28" fill="#ffffff" opacity="0.2" />
+    <polygon points="225,215 242,225 225,235" fill="#ffffff" />
+    
+    <rect x="40" y="305" width="70" height="16" rx="4" fill="#ff416c" opacity="0.9" />
+    <text x="75" y="317" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">HEADLINE</text>
+    <text x="40" y="342" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Daily Tech &amp; Market Insights in Realtime</text>
+    <rect x="40" y="358" width="360" height="8" rx="2" fill="#475569" />
+    <rect x="40" y="372" width="240" height="8" rx="2" fill="#334155" />
+
+    <!-- Sidebar Mini Cards -->
+    <!-- Card 1 -->
+    <rect x="455" y="145" width="240" height="75" rx="6" fill="url(#card-dd)" stroke="#334155" stroke-width="1" />
+    <rect x="465" y="155" width="65" height="55" rx="4" fill="#3b82f6" opacity="0.4" />
+    <rect x="540" y="160" width="140" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="540" y="178" width="110" height="8" rx="2" fill="#64748b" />
+    <rect x="540" y="193" width="70" height="7" rx="2" fill="#475569" />
+
+    <!-- Card 2 -->
+    <rect x="455" y="235" width="240" height="75" rx="6" fill="url(#card-dd)" stroke="#334155" stroke-width="1" />
+    <rect x="465" y="245" width="65" height="55" rx="4" fill="#10b981" opacity="0.4" />
+    <rect x="540" y="250" width="140" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="540" y="268" width="120" height="8" rx="2" fill="#64748b" />
+    <rect x="540" y="283" width="60" height="7" rx="2" fill="#475569" />
+
+    <!-- Card 3 -->
+    <rect x="455" y="325" width="240" height="75" rx="6" fill="url(#card-dd)" stroke="#334155" stroke-width="1" />
+    <rect x="465" y="335" width="65" height="55" rx="4" fill="#f59e0b" opacity="0.4" />
+    <rect x="540" y="340" width="130" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="540" y="358" width="100" height="8" rx="2" fill="#64748b" />
+    <rect x="540" y="373" width="80" height="7" rx="2" fill="#475569" />
+  </g>
+</svg>
